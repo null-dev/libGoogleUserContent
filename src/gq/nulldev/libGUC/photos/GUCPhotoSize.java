@@ -26,6 +26,10 @@ public class GUCPhotoSize {
 
     /**
      * Scale the photo to the dimensions specified.
+     *
+     * WARNING: Google scales the photo keeping the aspect ratio, it will prioritize height over width.
+     *          If the width does not match the height's aspect ratio, it will just ignore the width.
+     *
      * @param height The height of the photo.
      * @param width The width of the photo.
      */
