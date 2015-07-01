@@ -8,6 +8,10 @@ package gq.nulldev.libGUC.photos;
 /**
  * A simple size argument for photos.
  */
+
+/**
+ * An easy way to specify sizes for GUC photos.
+ */
 public class GUCPhotoSize {
     int pixelLimit = -1;
 

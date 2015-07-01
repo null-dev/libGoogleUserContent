@@ -13,15 +13,9 @@ package gq.nulldev.libGUC.videos;
  *
  * WARNING: Do not just use the largest size possible. It will just give you an invalid URL (which doesn't fall back).
  *          Make sure that the original video is at least equal or larger to the size you want served.
+ *          To do this, you can use the "getSupportedResolutions(GUCObject video)" function in the GUCGoogleCommunicator class.
  */
 public enum GUCVideoType {
-    //Human friendly wording of video sizes
-    SMALL_MP4(18),
-    BIG_MP4(22),
-    TINY_3GP(36),
-    MASSIVE_MP4(37),
-
-    //More technical version of the video sizes.
     _3GP_320x180(36),
     _MP4_640x360(18),
     _MP4_1280x720(22),

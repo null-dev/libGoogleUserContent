@@ -1,7 +1,7 @@
 # libGoogleUserContent
 A very lightweight but pointless library to programmatically construct googleusercontent.com URLs.
 
-It currently consists of only 5 classes! There really is no point in using this except because it is a lot more "Object Oriented" than hardcoding in URLS (and it looks a lot nicer).
+It currently consists of only 6 classes! There really is no point in using this except because it is a lot more "Object Oriented" than hardcoding in URLS (and it looks a lot nicer).
 
 You can download the JAR in the releases section, just import and go.
 

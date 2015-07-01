@@ -7,6 +7,10 @@ import gq.nulldev.libGUC.photos.GUCPhoto;
  * Created: 28/06/15
  * Author: nulldev
  */
+
+/**
+ * A GUC Video's thumbnail. Based on GUCPhoto.
+ */
 public class GUCVideoThumbnail extends GUCPhoto {
     boolean animate = true;
     boolean showPlayButton = true;

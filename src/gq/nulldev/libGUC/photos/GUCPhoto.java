@@ -7,6 +7,10 @@ import gq.nulldev.libGUC.GUCObject;
  * Created: 28/06/15
  * Author: nulldev
  */
+
+/**
+ * A GUC photo.
+ */
 public class GUCPhoto extends GUCObject {
     GUCPhotoSize photoSize = null;
 

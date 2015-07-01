@@ -7,6 +7,10 @@ import gq.nulldev.libGUC.GUCObject;
  * Created: 28/06/15
  * Author: nulldev
  */
+
+/**
+ * A GUC Video.
+ */
 public class GUCVideo extends GUCObject {
     GUCVideoType videoType;
 
