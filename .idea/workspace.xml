@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa7e5fd-0c47-4a9e-a2ff-1630a7c31d96" name="Default" comment="Quick comment addition.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/GUCGoogleCommunicator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/photos/GUCPhoto.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/photos/GUCPhoto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/photos/GUCPhotoSize.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/photos/GUCPhotoSize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideo.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoThumbnail.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoThumbnail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="$PROJECT_DIR$/src/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="9aa7e5fd-0c47-4a9e-a2ff-1630a7c31d96" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="libGoogleUserContent.iws" />
@@ -517,7 +508,7 @@
       <option name="number" value="Default" />
       <updated>1435507593052</updated>
       <workItem from="1435507594823" duration="9525000" />
-      <workItem from="1435710827528" duration="1635000" />
+      <workItem from="1435710827528" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="Quick comment addition.">
       <created>1435516926403</created>
@@ -531,11 +522,17 @@
       <option name="project" value="LOCAL" />
       <updated>1435516980775</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added some more documentation.&#10;Remove human friendly wording of video sizes for simplicity.&#10;Added utility class for verifying content keys and finding supported video types.&#10;Updated tests to test changes.">
+      <created>1435712572449</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1435712572449</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11160000" />
+    <option name="totallyTimeSpent" value="11285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -573,7 +570,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quick comment addition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick comment addition." />
+    <MESSAGE value="Added some more documentation.&#10;Remove human friendly wording of video sizes for simplicity.&#10;Added utility class for verifying content keys and finding supported video types.&#10;Updated tests to test changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some more documentation.&#10;Remove human friendly wording of video sizes for simplicity.&#10;Added utility class for verifying content keys and finding supported video types.&#10;Updated tests to test changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
