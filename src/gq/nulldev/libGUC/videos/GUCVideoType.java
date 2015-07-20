@@ -17,6 +17,7 @@ package gq.nulldev.libGUC.videos;
  */
 public enum GUCVideoType {
     _MP4_1920x1080(37),
+    _MP4_1280x738(15),
     _MP4_1280x720(22),
     _MP4_640x360(18),
     _3GP_320x180(36);

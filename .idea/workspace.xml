@@ -7,13 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9aa7e5fd-0c47-4a9e-a2ff-1630a7c31d96" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/photos/GUCPhoto.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/photos/GUCPhoto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/photos/GUCPhotoSize.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/photos/GUCPhotoSize.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideo.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideoThumbnail.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideoThumbnail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideoType.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/gq/nulldev/libGUC/videos/GUCVideoType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/libGoogleUserContent/Test.class" afterPath="$PROJECT_DIR$/out/production/libGoogleUserContent/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/libGUC/libGUC.jar" afterPath="$PROJECT_DIR$/out/artifacts/libGUC/libGUC.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java" afterPath="$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,8 +46,8 @@
       <file leaf-file-name="GUCVideoType.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2962298">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.51526034">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -139,7 +132,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,7 +266,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,7 +593,8 @@
       <workItem from="1435507594823" duration="9525000" />
       <workItem from="1435710827528" duration="2194000" />
       <workItem from="1437396368467" duration="172000" />
-      <workItem from="1437398396388" duration="59000" />
+      <workItem from="1437398396388" duration="142000" />
+      <workItem from="1437412026011" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Quick comment addition.">
       <created>1435516926403</created>
@@ -626,11 +620,17 @@
       <option name="project" value="LOCAL" />
       <updated>1435712594482</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reversed order of video resolutions.">
+      <created>1437398493326</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1437398493326</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11950000" />
+    <option name="totallyTimeSpent" value="12100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="6" />
@@ -670,7 +670,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quick comment addition." />
     <MESSAGE value="Added some more documentation.&#10;Remove human friendly wording of video sizes for simplicity.&#10;Added utility class for verifying content keys and finding supported video types.&#10;Updated tests to test changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some more documentation.&#10;Remove human friendly wording of video sizes for simplicity.&#10;Added utility class for verifying content keys and finding supported video types.&#10;Updated tests to test changes." />
+    <MESSAGE value="Reversed order of video resolutions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reversed order of video resolutions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,6 +682,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gq/nulldev/libGUC/GUCGoogleCommunicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gq/nulldev/libGUC/GUCGoogleCommunicator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -778,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gq/nulldev/libGUC/videos/GUCVideoType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2962298">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.51526034">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
