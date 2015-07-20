@@ -16,10 +16,11 @@ package gq.nulldev.libGUC.videos;
  *          To do this, you can use the "getSupportedResolutions(GUCObject video)" function in the GUCGoogleCommunicator class.
  */
 public enum GUCVideoType {
-    _3GP_320x180(36),
-    _MP4_640x360(18),
+    _MP4_1920x1080(37),
     _MP4_1280x720(22),
-    _MP4_1920x1080(37);
+    _MP4_640x360(18),
+    _3GP_320x180(36);
+
     private int code;
 
     GUCVideoType(int code) {
