@@ -2,6 +2,8 @@ package gq.nulldev.libGUC.photos;
 
 import gq.nulldev.libGUC.GUCObject;
 
+import java.util.ArrayList;
+
 /**
  * Project: libGoogleUserContent
  * Created: 28/06/15
@@ -13,6 +15,7 @@ import gq.nulldev.libGUC.GUCObject;
  */
 public class GUCPhoto extends GUCObject {
     GUCPhotoSize photoSize = null;
+    ArrayList<GUCPhotoTransformation> transformations = null;
 
     /**
      * Construct a new photo stored in GoogleUserContent from a content key.
@@ -29,6 +32,24 @@ public class GUCPhoto extends GUCObject {
     public GUCPhoto(String contentKey, GUCPhotoSize photoSize) {
         super(contentKey);
         this.photoSize = photoSize;
+    }
+
+    /**
+     * Apply a transformation on the image
+     * @param transformation The transformation to apply
+     */
+    public void applyTransformation(GUCPhotoTransformation transformation) {
+        if(transformations == null) transformations = new ArrayList<>();
+        transformations.add(transformation);
+    }
+
+    /**
+     * Get all transformations applied on the image
+     * @return An arraylist of the applied transformations
+     */
+    public ArrayList<GUCPhotoTransformation> getTransformations() {
+        if(transformations == null) transformations = new ArrayList<>();
+        return transformations;
     }
 
     /**
@@ -50,19 +71,35 @@ public class GUCPhoto extends GUCObject {
     public void setPhotoSize(GUCPhotoSize photoSize) {
         this.photoSize = photoSize;
     }
-
+    
     @Override
     public String getURL() {
+        StringBuilder url = new StringBuilder(super.getURL());
         if(photoSize == null) {
-            return super.getURL() + "=s0";
+            url.append("=s0");
         } else {
             //Size specified
-            if(photoSize.getPixelLimit() != -1) {
-                return super.getURL() + "=s" + photoSize.getPixelLimit();
+            if(photoSize.getLongestEdgeLimit() != -1) {
+                url.append("=s")
+                        .append(photoSize.getLongestEdgeLimit());
             } else {
-                return super.getURL() + "=w" + photoSize.getWidth() + "-h" + photoSize.getHeight();
+                url.append("=w")
+                        .append(photoSize.getWidth())
+                        .append("-h")
+                        .append(photoSize.getHeight());
+            }
+            //Add crop
+            if(photoSize.isCrop()) {
+                url.append("-c");
             }
         }
+        //Apply transformations
+        if(transformations != null && transformations.size() > 0) {
+            for(GUCPhotoTransformation transformation : transformations) {
+                url.append('-').append(transformation.toUrlParameter());
+            }
+        }
+        return url.toString();
     }
 
     @Override

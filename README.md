@@ -1,7 +1,10 @@
 # libGoogleUserContent
-A very lightweight but pointless library to programmatically construct googleusercontent.com URLs.
+A very lightweight library to programmatically construct googleusercontent.com URLs.
 
-It currently consists of only 6 classes! There really is no point in using this except because it is a lot more "Object Oriented" than hardcoding in URLS (and it looks a lot nicer).
+### What does this library do? ###
+libGoogleUserContent allows you to offload some of the load onto Google's servers if you need to sometimes apply transformations and resizing operations onto your images. Google's servers can do some of these operations via a hidden API. I have reverse engineered some of the API features and made them available in library form.
+
+WARNING: This library uses an API that is mostly undocumented and unsupported publicly. <b>Transformations and features may come and go at any time</b> at the discretion of the great "Google". This library is not official either, it comes from a lot of trial and error and the reverse engineering of many URLs.
 
 You can download the JAR in the releases section, just import and go.
 
@@ -40,3 +43,13 @@ thumb.setPhotoSize(new GUCPhotoSize(100));
 System.out.println(thumb.getURL());
 ```
 (Returns: https://lh3.googleusercontent.com/FStqaBaXK7pteZ4jX5poKc0c-Ed2tqKcv2NyTAP7MwuH=s100-k-no)
+
+Get the url of an animated thumbnail of a video from a content key with a play button overlaid on it, apply a 30 pixel border and flip it upside down:
+```
+GUCVideo video = new GUCVideo("FStqaBaXK7pteZ4jX5poKc0c-Ed2tqKcv2NyTAP7MwuH", GUCVideoType._MP4_1280x720);
+GUCVideoThumbnail thumb = video.getThumbnail();
+thumb.applyTransformation(new GUCPhotoTransformation(GUCPhotoTransformation.Type.BORDER, "30"));
+thumb.applyTransformation(new GUCPhotoTransformation(GUCPhotoTransformation.Type.VERTICAL_FLIP));
+URL thumbURL = thumb.getURL();
+```
+(Returns: https://lh3.googleusercontent.com/FStqaBaXK7pteZ4jX5poKc0c-Ed2tqKcv2NyTAP7MwuH=s0-b30-fv)

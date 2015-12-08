@@ -19,17 +19,17 @@ package gq.nulldev.libGUC.videos;
  *          To do this, you can use the "getSupportedResolutions(GUCObject video)" function in the GUCGoogleCommunicator class.
  */
 public enum GUCVideoType {
-    /* +--------------------------------------------------+ */
-    /* | PLEASE NOTE ABOUT VIDEOS IN 4K                   | */
-    /* |                                                  | */
-    /* | The videos appear to have a split video          | */
-    /* | and audio track at this point!                   | */
-    /* |                                                  | */
-    /* | Also note that the video track is not DCI        | */
-    /* | 4K it is actually UHD 4K.                        | */
-    /* | */ _MP4_3840x2160(272, "Ultra HD 4K"),/* (VIDEO) | */
-    /* |    _AUDIO_3840x2160(251),                (AUDIO) | */
-    /* +--------------------------------------------------+ */
+    /* +----------------------------------------------------------+ */
+    /* | PLEASE NOTE ABOUT VIDEOS IN 4K                           | */
+    /* |                                                          | */
+    /* | The videos appear to have a split video                  | */
+    /* | and audio track at this point!                           | */
+    /* |                                                          | */
+    /* | Also note that the video track is not DCI                | */
+    /* | 4K, it is actually UHD 4K.                               | */
+    /* | */ _MP4_3840x2160(272, "Ultra HD 4K"),/* (VIDEO)         | */
+    /* | */ _AUDIO_3840x2160(251, "Ultra HD 4K Audio"),/* (AUDIO) | */
+    /* +----------------------------------------------------------+ */
     _MP4_2560x1440(271, "Quad HD"),
     _MP4_1920x1080(37, "Full HD"),
     _MP4_1280x738(15, "HD"),

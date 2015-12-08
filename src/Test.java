@@ -2,6 +2,7 @@ import gq.nulldev.libGUC.GUCGoogleCommunicator;
 import gq.nulldev.libGUC.GUCObject;
 import gq.nulldev.libGUC.photos.GUCPhoto;
 import gq.nulldev.libGUC.photos.GUCPhotoSize;
+import gq.nulldev.libGUC.photos.GUCPhotoTransformation;
 import gq.nulldev.libGUC.videos.GUCVideo;
 import gq.nulldev.libGUC.videos.GUCVideoThumbnail;
 import gq.nulldev.libGUC.videos.GUCVideoType;
@@ -19,7 +20,7 @@ public class Test {
     static final String EXAMPLE_INVALID_CONTENT_KEY = "0000000000000000000000000000000000000";
 
     /*
-    Too lazy to write real unit tests :/
+    Too lazy to use JUnit
      */
     public static void main(String[] args) {
         String result;
@@ -100,6 +101,15 @@ public class Test {
         System.out.println("Testing getSupportedResolutions:");
         System.out.println(result = GUCGoogleCommunicator.getSupportedResolutions(EXAMPLE_CONTENT_KEY).toString());
         assert result.equals("[_MP4_1280x738, _MP4_1280x720, _MP4_640x360, _3GP_320x180]");
+        System.out.println();
+        {
+            System.out.println("Testing transformations:");
+            GUCVideoThumbnail thumbnail = new GUCVideo(EXAMPLE_CONTENT_KEY, GUCVideoType._MP4_640x360).getThumbnail();
+            thumbnail.applyTransformation(new GUCPhotoTransformation(GUCPhotoTransformation.Type.BORDER, "30"));
+            thumbnail.applyTransformation(new GUCPhotoTransformation(GUCPhotoTransformation.Type.VERTICAL_FLIP));
+            System.out.println(result = thumbnail.getURL());
+            assert result.equals("https://lh3.googleusercontent.com/FStqaBaXK7pteZ4jX5poKc0c-Ed2tqKcv2NyTAP7MwuH=s0-b30-fv");
+        }
         System.out.println();
         System.out.println("All tests complete!");
     }

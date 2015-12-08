@@ -23,6 +23,7 @@ public class GUCGoogleCommunicator {
     //The list of invalid response codes
     static ArrayList<Integer> INVALID_RESPONSE_CODES = new ArrayList<>(Arrays.asList(new Integer[]{
             404,
+            403,
             500
     }));
 
